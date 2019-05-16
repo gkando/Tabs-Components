@@ -1,3 +1,11 @@
 @lambda-red: rgb(147,29,37);
 @lambda-light-red: lighten(@lambda-red,10%);
 @white: rgb(255,255,255);
+
+.flex(@jc: none, @ai: none, @dir: row) {
+    display: flex;
+    justify-content: @jc;
+    align-items: @ai;
+    flex-direction: @dir;
+  }
+  

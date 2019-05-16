@@ -33,6 +33,11 @@ class TabLink {
     // Call the select method on the item associated with this link
     new TabItem(this.itemElement).select();
   }
+
+  active = () => {
+
+    
+  }
 }
 
 class TabItem {

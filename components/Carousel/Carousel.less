@@ -1,0 +1,64 @@
+.carousel {
+    width: 100%;
+    .flex(center, center);
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+    @media(min-width: 1200px){
+      width: 1200px;
+    }
+    .left-button, .right-button {
+      .flex(center);
+      color: #fff;
+    //   background-color: #333;
+      font-size: 40px;
+      border-radius: 50%;
+      position: absolute;
+      height: 50px;
+      cursor: pointer;
+      &:hover {
+        color: #333;
+        // background-color: #fff;
+        // border: 2px solid #333;
+      }
+    }
+
+    .prev-next-control {
+        display: block;
+        float: right;
+        margin-right: 5px;
+        display: none;
+        width: 40px;
+        height: 40px;
+        // border-radius: 50%;
+        // background: #fff;
+        opacity: 0.7;
+        padding-left: 15px;
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        margin: 0;
+        line-height: 38px;
+        font-size: 3em;
+        display: block;
+        color: #777;
+    }
+    
+    .left-button {
+      top: 50%; 
+      left: 0rem;
+      transform: translate(0, -50%);
+    }
+    .right-button {
+      top: 50%; 
+      right: 2.5rem;
+      transform: translate(0, -50%);
+    }
+    img {
+      width: 100%;
+      display: none;
+      z-index: -1
+
+    }
+  }
