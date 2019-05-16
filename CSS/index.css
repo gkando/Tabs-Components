@@ -90,6 +90,72 @@
 .tabs .tabs-link-selected:hover {
   background-color: #ffffff;
 }
+.carousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 6px;
+}
+@media (min-width: 1200px) {
+  .carousel {
+    width: 1200px;
+  }
+}
+.carousel .left-button,
+.carousel .right-button {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
+  color: #fff;
+  font-size: 40px;
+  border-radius: 50%;
+  position: absolute;
+  height: 50px;
+  cursor: pointer;
+}
+.carousel .left-button:hover,
+.carousel .right-button:hover {
+  color: #333;
+}
+.carousel .prev-next-control {
+  float: right;
+  margin-right: 5px;
+  display: none;
+  width: 40px;
+  height: 40px;
+  opacity: 0.7;
+  padding-left: 15px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  margin: 0;
+  line-height: 38px;
+  font-size: 3em;
+  display: block;
+  color: #777;
+}
+.carousel .left-button {
+  top: 50%;
+  left: 0rem;
+  transform: translate(0, -50%);
+}
+.carousel .right-button {
+  top: 50%;
+  right: 2.5rem;
+  transform: translate(0, -50%);
+}
+.carousel img {
+  width: 100%;
+  display: none;
+  z-index: -1;
+}
 body {
   box-sizing: border-box;
   min-width: 300px;
